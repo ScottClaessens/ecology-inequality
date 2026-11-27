@@ -1,4 +1,4 @@
-# Ecology and social inequality in hunter-gatherer societies
+# Ecology and social inequality in human societies
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ the following R packages:
 
 ```r
 install.packages(
-  c("ape", "phangorn", "tarchetypes", "targets", "tidyverse")
+  c("ape", "phangorn", "tarchetypes", "targets", "tidyverse", "treeio")
 )
 ```
 

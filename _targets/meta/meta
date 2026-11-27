@@ -1,12 +1,18 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 tree_file|stem|097e0a16f1431efe|1de9ec4cb0b83efe|2c530c1562a7fbd1|-419834672|data/tree/dplace.nxs|t20557.9999421296s|s55689082b|55689082|file|local|vector|||0.665||
-dplace_societies_url|stem|c3caf7f2ccd75161|aee14d29acec2be0|2c530c1562a7fbd1|17396771|https://raw.githubusercontent.com/D-PLACE/dplace-cldf/6c2008c187a297d1955b41d8ae80d8e31d404f6c/cldf/societies.csv|t20782.528634545s||0|url|local|vector|||0||
 sessionInfo|stem|145265fc39a292e9|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20782.5286356421s|s44b|44|rds|local|vector|||0.05||
 dplace_data_url|stem|e0e023be3db9dfae|14e703ec1d8b5d26|2c530c1562a7fbd1|545186855|https://raw.githubusercontent.com/D-PLACE/dplace-cldf/6c2008c187a297d1955b41d8ae80d8e31d404f6c/cldf/data.csv|t20782.5286885932s||0|url|local|vector|||0||
 glottolog_languages_url|stem|f18a0e38130eafea|bbd54384d0ebe985|2c530c1562a7fbd1|1513706872|https://raw.githubusercontent.com/glottolog/glottolog-cldf/072ca0d0410039fb8b779be8fc165bac575d2cda/cldf/languages.csv|t20782.5286956655s||0|url|local|vector|||0||
 world_regions_file|stem|5deacd9d5f047972|7af3908bc8a81463|2c530c1562a7fbd1|24289832|data/world_regions/world_regions.csv|t20726.4258948633s|s18985b|18985|file|local|vector|||0||
 tree|stem|ab4a02d2bffd987e|7b4ee45d0a45de90|ebd48cae5adb8908|437279712||t20782.5287585372s|s27129434b|27129434|rds|local|vector|||3.589||
-world_regions|stem|751f4dd57aa3fdaa|df0f7c6a8c838bff|943febb800e9a6cf|1968630109||t20782.5287624782s|s3421b|3421|rds|local|vector|||0.32||
 mcc_tree|stem|f952d032dedd1b88|c47da3594f89d0e8|d30329012d3dc0b6|-2069454262||t20782.5288699189s|s33711b|33711|rds|local|vector|||9.175||
-data|stem|8505d2404cfc51ef|ebe92427f595309c|65a12e6d19cd901a|33550471||t20782.5289506143s|s31268b|31268|rds|local|vector|||6.956||
+npp_file|stem|8f5249d036101134|4645c324e949146b|2c530c1562a7fbd1|-399988046|data/npp/npp.csv|t20782.8187975785s|s29859b|29859|file|local|vector|||1.528||
+npp|stem|128192483b2a2a71|34f993cd2fda7986|ba0d32d56196f68f|1750055384||t20782.8283189134s|s21523b|21523|rds|local|vector|||0.064||
+world_regions|stem|751f4dd57aa3fdaa|fa47a4ae1d715560|943febb800e9a6cf|1968630109||t20782.8283192546s|s3421b|3421|rds|local|vector|||0.013||
+dplace_societies_url|stem|c3caf7f2ccd75161|aee14d29acec2be0|2c530c1562a7fbd1|17396771|https://raw.githubusercontent.com/D-PLACE/dplace-cldf/6c2008c187a297d1955b41d8ae80d8e31d404f6c/cldf/societies.csv|t20783.4804291039s||0|url|local|vector|||0.695||
+data|stem|8505d2404cfc51ef|ebe92427f595309c|65a12e6d19cd901a|33550471||t20784.617897331s|s31268b|31268|rds|local|vector|||14.95||
+load_location_data|function|8b64f3dd728f6edf
 load_dplace_data|function|0feb083e1eaa4b14
+locations_file|stem|bfd70bb6f65a5b15|224983aec62af59f|2c530c1562a7fbd1|-1312723698|data/locations/edge6636-March-2023.trees|t20774.4586786625s|s1151167650b|1151167650|file|local|vector|||0.669||
+tree_id|stem|9d22e15ec38e234a|33513a2379fc1c06|d30329012d3dc0b6|735631478||t20784.6222323821s|s51b|51|rds|local|vector|||0||
+locations|stem|2d9979dea29cb919|a7f11fc1704a9c8d|8705efbc44f35351|-1299370672||t20784.629983901s|s415570b|415570|rds|local|vector|||669.665|incomplete final line found on 'data/locations/edge6636-March-2023.trees'|

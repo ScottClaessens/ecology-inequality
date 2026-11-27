@@ -1,6 +1,6 @@
 library(targets)
 library(tarchetypes)
-tar_option_set(packages = c("ape", "phangorn", "tidyverse"))
+tar_option_set(packages = c("ape", "phangorn", "tidyverse", "treeio"))
 tar_source()
 
 # pipeline
@@ -47,7 +47,10 @@ list(
   tar_target(tree, read.nexus(tree_file)),
 
   # load world regions
-  tar_target(world_regions, read_csv(world_regions_file)),
+  tar_target(
+    world_regions,
+    read_csv(world_regions_file, show_col_types = FALSE)
+  ),
 
   # compute maximum clade credibility tree
   tar_target(mcc_tree, phangorn::mcc(tree)),
@@ -60,7 +63,25 @@ list(
       glottolog_languages_url, mcc_tree, world_regions
     )
   ),
-
+  
+  # ─────────────────────────────────────────
+  # Load location data
+  # ─────────────────────────────────────────
+  
+  # get tree ids
+  tar_target(tree_id, sample(seq_along(tree), size = 1, replace = FALSE)),
+  
+  # get locations file path
+  tar_target(locations_file, "data/locations/edge6636-March-2023.trees",
+             format = "file"),
+  
+  # load location data
+  tar_target(locations, load_location_data(locations_file, tree_id)),
+  
+  # ─────────────────────────────────────────
+  # Session info
+  # ─────────────────────────────────────────
+  
   # write session info
   tar_target(
     sessionInfo,
